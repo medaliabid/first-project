@@ -3,47 +3,223 @@
     <head>
       <title>Cup Cake coffee bar</title>
       <meta charset="utf-8">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js" ></script>
+
+  
+
+
+   <!--  CSS Files -->
+  
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+     rel="stylesheet"
+     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+     crossorigin="anonymous"
+   />
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+     rel="stylesheet"
+   />
+   <link
+     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+     rel="stylesheet"
+   />
+   
+  
+   <!-- Template Main CSS File -->
       <link rel="stylesheet" href="style.css">
       </head>
-      <body id="body">
-        <h1>CUP & CAKE Coffee Shop</h1>
+
+    
+
+      <body id="body"> 
 
        <!-- topbar -->
+  <section
+      id="topbar"
+      class="d-flex align-items-center fixed-top topbar-transparent"
+    >
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start"
+      >
+        <i class="bi bi-phone d-flex align-items-center"
+          ><span>+216 29 551 726</span></i
+        >
+        <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"
+          ><span>Mon-Thu: 07:00 AM - 23:00 PM</span></i
+        >
+        <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"
+          ><span>Fri-Sun: 07:00 AM - 00:00 PM</span></i
+        >
+      </div>
+    </section>
 
-        <section id="topbar">
-        <div class="container">
-          <i class="phone "
-            ><span>+216 29 551 276</span></i
-          >
-          <i class="clock 1"
-            ><span>Mon-Thu: 12:00 AM - 23:00 PM</span></i
-          >
-          <i class="clock 2"
-            ><span>Fri-Sun: 12:00 AM - 01:00 PM</span></i
-          >
+      <!-- header -->
+  <header
+      id="header"
+      class="fixed-top d-flex align-items-center header-transparent">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <div class="logo me-auto">
+          <h1><a href="index.html"> Cup & Cacke coffee shop</a></h1>
         </div>
-      </section>
 
-      <!-- navbar -->
-        <nav id="navbar" >
+        <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
             <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="#cmd">menu</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
+      </div>
+    </header>
+
+
+<!-- Hero -->
+    <section id="hero">
+            <div
+              class="carousel-item active"
+              style="background-image: url(images/logo.jpg)" >
+            </div>
+    </section>
+    
+   
+
 
         <!-- about -->
-        <div
-              class="about"
-            >
-              <div class="content">
-                <h3>Discover <strong>OUR HISTORY</strong></h3>
-                <p>
-                  .
+        <section id="about" class="about">
+          <div class="container-fluid max-width-container">
+            <div class="row">
+              <div class="col-lg-5 align-items-stretch video-box">
+                <video
+                  width="270"
+                  height="480"
+                  preload="none"
+                  controls
+                  muted
+                  src="images/Plage de Korba du ciel (Mai 2017).mp4"
+                ></video>
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+              
+                <h3>Discover <strong>OUR TOWN</strong></h3>
+                <p id = "korba">
+                  Korba (Tunisian Arabic: قربة qorbā), ancient Curubis, is a town in Tunisia on the eastern shore of the Cap Bon.
+                  It was the place of exile of the Carthaginian bishop Cyprian in the year leading up to his martyrdom.
+                  Modern Korba is in the Nabeul Governorate.
                 </p>
+              
+            </div>
+          </div>
+        </div> 
+      </section>
+
+
+
+
+             <!-- ======= Gallery Section ======= -->
+      <section id="gallery" class="gallery">
+        <div class="container-fluid max-width-container">
+          <div class="section-title">
+            <h2>Some photos from <span>Our coffee bar</span></h2>
+          </div>
+          <div class="row g-2">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/1.jpg">
+                  <img
+                    src="images/1.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/2.jpg">
+                  <img
+                    src="images/2.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/3.jpg">
+                  <img
+                    src="images/3.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/4.jpg">
+                  <img
+                    src="images/4.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/5.jpg">
+                  <img
+                    src="images/5.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/6.jpg">
+                  <img
+                    src="images/6.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/7.jpg">
+                  <img
+                    src="images/7.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+              <div class="gallery-item">
+                <a href="images/8.jpg">
+                  <img
+                    src="images/8.jpg"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -51,14 +227,102 @@
       </section>
 
 
-      <h2 id="cmd">your command is :</h2>
-      <button id = "b2">previous</button>
-      <button id = "b3">next</button>
-      <input type="text" name="drink" id="drink">
-      <button id = 'b4'>select</button>
-      <button id = 'b5'>remove</button>
-      <img id = 'i' src="data:image/png;base64,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" alt="">
-      <a href="https://www.google.tn/maps/@36.5762939,10.8647709,17z?hl=fr"> map </a>
+
+
+    <section>
+      <div>  
+         <h2 id="cmd">your command is :</h2>
+          <button id = "b2">previous</button>
+         <button id = "b3">next</button>
+         <input type="text" name="drink" id="drink">
+         <button id = 'b4'>select</button>
+         <button id = 'b1'>remove</button>
+         <img id = 'i' src="data:image/png;base64,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" alt="">
+      </div>
+    </section>
+
+
+
+
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container max-width-container">
+          <div class="section-title">
+            <h2><span>Contact</span> Us</h2>
+            <p>Show Our Location Map.</p>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="images/10.jpg"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="container mt-5 max-width-container">
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>environment boulevard<br />Korba, Tunisia</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>Monday-Thursday:<br />07:00 AM - 23:00 PM</p>
+                <p>Friday-Sunday:<br />07:00 AM - 00:00 PM</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>cupNcake@example.com</p>
+              </div>
+
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>(+216) 29 551 726</p>
+              </div>
+            </div>
+          </div>
+
+       <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Cupe & Cacke</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100066567023065" class="facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/cupncake2021/" class="instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Cup & Cacke</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by
+          <a href="https://github.com/medaliabid/first-project" target="_blank"
+            >Abid Mohamed Ali</a
+          >
+        </div>
+      </div>
+    </footer>
+   
+
+
       <script src = "main.js" ></script> 
     </body>
 </html>
