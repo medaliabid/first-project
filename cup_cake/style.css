@@ -1,0 +1,22 @@
+
+
+
+body{ 
+  background-image: url("file:///C:/Users/tun/Desktop/project/cup_cake/logo.jpg");
+}
+
+
+h1 {
+    padding-left: 500px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  img {
+    padding-right: 100%;
+    max-width: 500px; 
+    height: 100px; 
+  }
+
+
+  
