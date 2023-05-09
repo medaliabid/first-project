@@ -288,24 +288,25 @@ Navigation Menu
   background: linear-gradient(to bottom, #dacdbc,#fff);
 }
 
+.contain_para{
+  display: flex;
+  padding: 30px;
+  gap:30px
+}
 
-.about .content p {
-  
-  font-size: 15px;
-  color: #848484;
-  text-align: justify;
+.para{
+
+text-align: justify;
+width: 100%;
+padding: 30px 100px 150px 100px ;
+}
+
+#title {
+  text-align: center;
+  font: italic;
 }
 
 
-
-.about .video-box {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  min-height: 400px;
-  position: relative;
-
-}
 
 
 

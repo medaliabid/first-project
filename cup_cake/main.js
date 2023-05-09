@@ -40,9 +40,6 @@ prev.onclick = function () {
 
 
 
-
-  
-
   add.onclick = function () {
     var drink = document.getElementById("drink").value
     console.log("drink",drink)
@@ -53,6 +50,3 @@ prev.onclick = function () {
     var list =  elemnts.appendChild(node);
    boody.appendChild(list)
   }
-
-
-
